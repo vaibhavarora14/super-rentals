@@ -3,14 +3,14 @@ import { setupRenderingTest } from 'ember-qunit';
 import { render } from '@ember/test-helpers';
 import { hbs } from 'ember-cli-htmlbars';
 
-module('Integration | Component | rental', function(hooks) {
+module('Integration | Component | rental', function (hooks) {
   setupRenderingTest(hooks);
 
-  hooks.beforeEach(function() {
+  hooks.beforeEach(function () {
     this.owner.setupRouter();
   })
 
-  test('it renders information about a rental property', async function(assert) {
+  test('it renders information about a rental property', async function (assert) {
     this.setProperties({
       rental: {
         id: 'grand-old-mansion',
